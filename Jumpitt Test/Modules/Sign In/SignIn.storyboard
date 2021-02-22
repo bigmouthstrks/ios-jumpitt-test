@@ -21,20 +21,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-oT-aFD" userLabel="ViewContent">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-oT-aFD" userLabel="ContentStackView">
                                 <rect key="frame" x="20" y="30" width="280" height="498"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="299-vs-WuA">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="299-vs-WuA" userLabel="HeaderStackView">
                                         <rect key="frame" x="10" y="10" width="250" height="368"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear cuenta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-Ts-qiS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear cuenta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fU-Ts-qiS" userLabel="CrearCuentaLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="48"/>
                                                 <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="15" right="15"/>
                                                 <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Nombre" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="oCE-Zb-xyb">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Nombre" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="oCE-Zb-xyb" userLabel="NombreTextField">
                                                 <rect key="frame" x="0.0" y="64" width="250" height="48"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Apellido" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-Vt-cgv">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Apellido" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gUH-Vt-cgv" userLabel="ApellidoTextField">
                                                 <rect key="frame" x="0.0" y="128" width="250" height="48"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,7 +50,7 @@
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="RUT" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="su5-MR-GcH" userLabel="RUT">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="RUT" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="su5-MR-GcH" userLabel="RutTextField">
                                                 <rect key="frame" x="0.0" y="192" width="250" height="48"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,7 +58,7 @@
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Correo electrónico" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YEC-sd-Abc">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Correo electrónico" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YEC-sd-Abc" userLabel="EmailTextField">
                                                 <rect key="frame" x="0.0" y="256" width="250" height="48"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,7 +66,7 @@
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Crear Contraseña" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="PF2-HE-iHB">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Crear Contraseña" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="PF2-HE-iHB" userLabel="PasswordTextField">
                                                 <rect key="frame" x="0.0" y="320" width="250" height="48"/>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -76,10 +76,10 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nff-Yt-iVR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nff-Yt-iVR" userLabel="ButtonStackView">
                                         <rect key="frame" x="10" y="378" width="250" height="90"/>
                                         <subviews>
-                                            <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLf-Eo-VlP">
+                                            <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLf-Eo-VlP" userLabel="CrearCuentaButton">
                                                 <rect key="frame" x="40" y="40" width="170" height="0.0"/>
                                                 <color key="backgroundColor" red="0.38431372549999998" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <edgeInsets key="layoutMargins" top="28" left="20" bottom="10" right="20"/>

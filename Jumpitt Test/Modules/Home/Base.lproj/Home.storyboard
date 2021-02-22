@@ -84,7 +84,7 @@
                                             <constraint firstItem="EnL-vJ-kfS" firstAttribute="height" secondItem="MtE-Dw-IDe" secondAttribute="height" id="VYS-Nm-QWC"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="center" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f2F-Km-xfw">
+                                    <stackView opaque="NO" contentMode="center" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f2F-Km-xfw" userLabel="CopyrightStackView">
                                         <rect key="frame" x="65.666666666666686" y="775.66666666666663" width="283" height="22.333333333333371"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="todos los derechos reservados Jumpittlabs 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foA-V6-bUl">
@@ -95,7 +95,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="0.0" right="8"/>
                                     </stackView>
                                 </subviews>
